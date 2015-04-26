@@ -125,6 +125,56 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-Mac-命令行删除用户" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/04/26/Mac-命令行删除用户/" class="article-date">
+  	<time datetime="2015-04-26T15:31:32.000Z" itemprop="datePublished">2015-04-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/26/Mac-命令行删除用户/">Mac 命令行删除用户</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>   最近刚放入手一款MacPro xc2，也就是macbook pro 15寸最高配<br> ，开机后发在打开终端，发现多了一个莫名其妙的用户，而且在<em>系统偏好设置</em>-&gt;<em>用户与群组</em>中是无显示的。估计机器已经被拆封了。顺便说一句，买电脑时，不要相信什么不拆封，有照片为证等胡话了，中国山寨能力一流，何况一个小小的封膜。好了，废话不多说，看一下如何删除一个用户。<br>   1、开机按command + s键，进入单用户模式。<br>   2、<code>/sbin/mount -uw /</code>  重新挂载启动卷<br>   3、<code>rm /Users/【用户名】</code> 删除用户<br>   4、<code>rm /var/db/.AppleSetupDown</code> 删除AppleSetupDown文件，该文件在电脑每次启动都会检查是否存在。<br>   5、<code>halt</code> 关机</p>
+<p>   OK，运行之后搞定！！</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
